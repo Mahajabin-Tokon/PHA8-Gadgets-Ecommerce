@@ -16,12 +16,12 @@ const CardDetails = () => {
   }, [data, id]);
 
   const handleClickForCart = (product) => {
-    addToCart(product)
-  }
+    addToCart(product);
+  };
 
   const handleClickForWishlist = (product) => {
-    addToWishlist(product)
-  }
+    addToWishlist(product);
+  };
 
   return (
     <div>
@@ -56,6 +56,13 @@ const CardDetails = () => {
             <p className="font-light">{product.description}</p>
             <p className="font-bold">Specifications:</p>
 
+            <ul className="pl-5">
+              {product.specs &&
+                Object.keys(product.specs).map((spec, idx) => (
+                  <li className="list-decimal" key={idx}>{product.specs[spec]}</li>
+                ))}
+            </ul>
+
             {/* {product.specs?.map((item) => {
               <p>{item}</p>;
             })} */}
@@ -69,13 +76,21 @@ const CardDetails = () => {
             <p className="font-bold">Rating:</p>
             <div className="flex gap-2 items-center">
               <ReactStars count={5} value={4} size={24} activeColor="#ffd700" />
-              <span className="bg-gray-200 py-1 px-2 rounded-xl">{product.rating}</span>
+              <span className="bg-gray-200 py-1 px-2 rounded-xl">
+                {product.rating}
+              </span>
             </div>
             <div className="card-actions justify-start items-center">
-              <button onClick={()=>handleClickForCart(product)} className="btn bg-purple-600 text-white rounded-3xl">
+              <button
+                onClick={() => handleClickForCart(product)}
+                className="btn bg-purple-600 text-white rounded-3xl"
+              >
                 Add to Cart <AiOutlineShoppingCart />
               </button>
-              <div onClick={()=>handleClickForWishlist(product)} className="bg-white rounded-full p-2 text-center border-2">
+              <div
+                onClick={() => handleClickForWishlist(product)}
+                className="bg-white rounded-full p-2 text-center border-2"
+              >
                 <CiHeart className="text-xl" />
               </div>
             </div>
