@@ -4,10 +4,17 @@ import { getCartItems } from "../utils";
 
 const Cart = () => {
   const [cart, setCart] = useState([]);
+
   useEffect(() => {
     const storedCart = getCartItems();
     setCart(storedCart);
   }, []);
+
+  const handleSort = () => {
+    const sorted = [...cart].sort((a,b)=>b.price -a.price)
+    setCart(sorted)
+  }
+
   return (
     <div>
       <div className="">
@@ -17,7 +24,7 @@ const Cart = () => {
           </div>
           <div className="md:flex justify-center items-center gap-2">
             <h2 className="font-bold">Total Cost: 999.99</h2>
-            <button className="btn border-purple-600 text-purple-600 rounded-3xl px-6">
+            <button onClick={handleSort} className="btn border-purple-600 text-purple-600 rounded-3xl px-6">
               Sort by Price <GiSettingsKnobs />
             </button>
             <button className="btn text-white bg-purple-600 rounded-3xl ">
