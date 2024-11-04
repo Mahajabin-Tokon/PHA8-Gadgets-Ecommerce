@@ -29,7 +29,7 @@ const Navbar = () => {
           >
             <NavLink to="/">Home</NavLink>
             <NavLink to="/">Statistics</NavLink>
-            <NavLink to="/">Dashboard</NavLink>
+            <NavLink to="/dashboard">Dashboard</NavLink>
           </ul>
         </div>
         <Link to="/" className="text-2xl font-bold text-white">
@@ -40,7 +40,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 gap-6 text-lg text-white">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/">Statistics</NavLink>
-          <NavLink to="/">Dashboard</NavLink>
+          <NavLink to="/dashboard">Dashboard</NavLink>
         </ul>
       </div>
       <div className="navbar-end space-x-4">
