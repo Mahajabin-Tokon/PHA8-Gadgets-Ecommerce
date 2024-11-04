@@ -5,18 +5,18 @@ const Menu = () => {
     <div>
       <ul className="menu bg-base-200">
         <li>
-          <Link to={`/cards/${"all"}`}>All Product</Link>
+          <Link to={`/cards/${"All"}`}>All Product</Link>
         </li>
         <li>
-          <Link to={`/cards/${"laptop"}`} className="active">
+          <Link to={`/cards/${"Laptop"}`} className="active">
             Laptop
           </Link>
         </li>
         <li>
-          <Link to={`/cards/${"phone"}`}>Phone</Link>
+          <Link to={`/cards/${"Phone"}`}>Phone</Link>
         </li>
         <li>
-          <Link to={`/cards/${"smartwatch"}`}>Smartwatch</Link>
+          <Link to={`/cards/${"Smartwatch"}`}>Smartwatch</Link>
         </li>
       </ul>
     </div>

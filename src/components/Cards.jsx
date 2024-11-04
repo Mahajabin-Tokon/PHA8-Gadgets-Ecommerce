@@ -1,19 +1,32 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Card from "./Card";
+import { useEffect, useState } from "react";
 
 const Cards = () => {
   const { type } = useParams();
   const data = useLoaderData();
-  console.log(data);
-  const arr = [1, 2, 3];
+  const [product, setProducts] = useState([]);
+
+  useEffect(() => {
+    if (type) {
+      if (type === "All") {
+        setProducts(data);
+      } else {
+        const filteredData = [...data].filter(
+          (dataElement) => dataElement.category === type
+        );
+        setProducts(filteredData);
+      }
+    } else {
+      setProducts(data);
+    }
+  }, [data, type]);
 
   return (
     <div className="grid grid-cols-1 md: grid-cols-2 lg: grid-cols-3 gap-2 p-2 mb-10">
-      
-      {data.map((eachdata) => (
+      {product.map((eachdata) => (
         <Card key={eachdata.product_id} product={eachdata} />
       ))}
-      
     </div>
   );
 };
