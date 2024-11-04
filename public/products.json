@@ -6,7 +6,7 @@
     "category": "Laptop",
     "price": 999.99,
     "description": "A high-performance, sleek laptop with a 13.4-inch display.",
-    "Specification": [
+    "specs": [
       "13.4-inch FHD+ display",
       "Intel Core i7",
       "16GB RAM",
@@ -23,7 +23,7 @@
     "category": "Laptop",
     "price": 1199.99,
     "description": "Apple's lightest laptop with the powerful M2 chip.",
-    "Specification": [
+    "specs": [
       "13.6-inch Liquid Retina display",
       "Apple M2 chip",
       "8GB RAM",
@@ -40,7 +40,7 @@
     "category": "Laptop",
     "price": 1099.99,
     "description": "A convertible laptop with a stunning touchscreen display.",
-    "Specification": [
+    "specs": [
       "13.5-inch OLED display",
       "Intel Core i5",
       "8GB RAM",
@@ -57,7 +57,7 @@
     "category": "Laptop",
     "price": 1399.99,
     "description": "An ultra-light, durable business laptop with premium build.",
-    "Specification": [
+    "specs": [
       "14-inch FHD display",
       "Intel Core i7",
       "16GB RAM",
@@ -74,7 +74,7 @@
     "category": "Laptop",
     "price": 799.99,
     "description": "Lightweight laptop with great battery life and performance.",
-    "Specification": [
+    "specs": [
       "14-inch FHD display",
       "AMD Ryzen 5",
       "8GB RAM",
@@ -91,7 +91,7 @@
     "category": "Phone",
     "price": 1099.99,
     "description": "Apple's latest high-performance smartphone with Pro features.",
-    "Specification": [
+    "specs": [
       "6.1-inch Super Retina XDR display",
       "A16 Bionic chip",
       "128GB storage",
@@ -108,7 +108,7 @@
     "category": "Phone",
     "price": 899.99,
     "description": "Samsung's flagship smartphone with powerful features.",
-    "Specification": [
+    "specs": [
       "6.1-inch AMOLED display",
       "Snapdragon 8 Gen 2",
       "128GB storage",
@@ -125,7 +125,7 @@
     "category": "Phone",
     "price": 649.99,
     "description": "Google's newest smartphone with excellent AI-powered features.",
-    "Specification": [
+    "specs": [
       "6.3-inch OLED display",
       "Google Tensor G2",
       "128GB storage",
@@ -142,7 +142,7 @@
     "category": "Phone",
     "price": 799.99,
     "description": "High-performance phone with fast charging and smooth display.",
-    "Specification": [
+    "specs": [
       "6.7-inch QHD+ AMOLED display",
       "Snapdragon 8 Gen 2",
       "256GB storage",
