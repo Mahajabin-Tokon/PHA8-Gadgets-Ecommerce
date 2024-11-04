@@ -3,16 +3,23 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./pages/Layout.jsx";
+import Banner from "./components/Banner.jsx";
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Layout/>,
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Banner />,
+      },
+    ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>
 );
