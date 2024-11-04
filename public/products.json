@@ -1,0 +1,155 @@
+[
+  {
+    "product_id": "LPT001",
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Laptop",
+    "price": 999.99,
+    "description": "A high-performance, sleek laptop with a 13.4-inch display.",
+    "Specification": [
+      "13.4-inch FHD+ display",
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "Intel Iris Xe Graphics"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "LPT002",
+    "product_title": "Apple MacBook Air M2",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Laptop",
+    "price": 1199.99,
+    "description": "Apple's lightest laptop with the powerful M2 chip.",
+    "Specification": [
+      "13.6-inch Liquid Retina display",
+      "Apple M2 chip",
+      "8GB RAM",
+      "256GB SSD",
+      "Integrated GPU"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "LPT003",
+    "product_title": "HP Spectre x360",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Laptop",
+    "price": 1099.99,
+    "description": "A convertible laptop with a stunning touchscreen display.",
+    "Specification": [
+      "13.5-inch OLED display",
+      "Intel Core i5",
+      "8GB RAM",
+      "512GB SSD",
+      "Intel Iris Xe Graphics"
+    ],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_id": "LPT004",
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Laptop",
+    "price": 1399.99,
+    "description": "An ultra-light, durable business laptop with premium build.",
+    "Specification": [
+      "14-inch FHD display",
+      "Intel Core i7",
+      "16GB RAM",
+      "1TB SSD",
+      "Intel UHD Graphics"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "LPT005",
+    "product_title": "Asus ZenBook 14",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Laptop",
+    "price": 799.99,
+    "description": "Lightweight laptop with great battery life and performance.",
+    "Specification": [
+      "14-inch FHD display",
+      "AMD Ryzen 5",
+      "8GB RAM",
+      "256GB SSD",
+      "AMD Radeon Graphics"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "PHN001",
+    "product_title": "iPhone 14 Pro",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Phone",
+    "price": 1099.99,
+    "description": "Apple's latest high-performance smartphone with Pro features.",
+    "Specification": [
+      "6.1-inch Super Retina XDR display",
+      "A16 Bionic chip",
+      "128GB storage",
+      "Triple 12MP cameras",
+      "5G enabled"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "PHN002",
+    "product_title": "Samsung Galaxy S23",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Phone",
+    "price": 899.99,
+    "description": "Samsung's flagship smartphone with powerful features.",
+    "Specification": [
+      "6.1-inch AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "128GB storage",
+      "Triple 50MP rear cameras",
+      "5G enabled"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "PHN003",
+    "product_title": "Google Pixel 7",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Phone",
+    "price": 649.99,
+    "description": "Google's newest smartphone with excellent AI-powered features.",
+    "Specification": [
+      "6.3-inch OLED display",
+      "Google Tensor G2",
+      "128GB storage",
+      "Dual 50MP + 12MP cameras",
+      "5G enabled"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "PHN004",
+    "product_title": "OnePlus 11",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Phone",
+    "price": 799.99,
+    "description": "High-performance phone with fast charging and smooth display.",
+    "Specification": [
+      "6.7-inch QHD+ AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "256GB storage",
+      "Triple 50MP rear cameras",
+      "5G enabled"
+    ],
+    "availability": false,
+    "rating": 4.5
+  }
+]

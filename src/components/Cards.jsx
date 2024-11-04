@@ -1,7 +1,12 @@
+import { useLoaderData, useParams } from "react-router-dom";
+
 const Cards = () => {
+    const {type} = useParams()
+    const data = useLoaderData()
+
     return (
         <div>
-            Card
+            {type}
         </div>
     );
 };
