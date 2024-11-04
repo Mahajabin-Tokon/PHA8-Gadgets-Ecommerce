@@ -7,6 +7,7 @@ import Layout from "./pages/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import Cards from "./components/Cards.jsx";
+import CardDetails from "./pages/CardDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "/details/:id",
+        element: <CardDetails />,
       },
     ],
   },

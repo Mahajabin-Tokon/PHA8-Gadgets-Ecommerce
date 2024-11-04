@@ -27,9 +27,30 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/">Statistics</NavLink>
-            <NavLink to="/dashboard">Dashboard</NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                ` ${isActive ? "font-bold underline" : "hover"}`
+              }
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/statistics"
+              className={({ isActive }) =>
+                ` ${isActive ? "font-bold underline" : "hover"}`
+              }
+            >
+              Statistics
+            </NavLink>
+            <NavLink
+              to="/dashboard"
+              className={({ isActive }) =>
+                ` ${isActive ? "font-bold underline" : "hover"}`
+              }
+            >
+              Dashboard
+            </NavLink>
           </ul>
         </div>
         <Link to="/" className="text-2xl font-bold text-white">
@@ -38,9 +59,30 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-6 text-lg text-white">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/">Statistics</NavLink>
-          <NavLink to="/dashboard">Dashboard</NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              ` ${isActive ? "font-bold underline" : "hover"}`
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/statistics"
+            className={({ isActive }) =>
+              ` ${isActive ? "font-bold underline" : "hover"}`
+            }
+          >
+            Statistics
+          </NavLink>
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              ` ${isActive ? "font-bold underline" : "hover"}`
+            }
+          >
+            Dashboard
+          </NavLink>
         </ul>
       </div>
       <div className="navbar-end space-x-4">

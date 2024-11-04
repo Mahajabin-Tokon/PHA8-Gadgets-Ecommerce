@@ -1,3 +1,5 @@
+import { Link, useNavigate } from "react-router-dom";
+
 const Card = ({product}) => {
   return (
     <>
@@ -9,7 +11,8 @@ const Card = ({product}) => {
           <h2 className="card-title">{product.product_title}</h2>
           <p>Price: {product.price}</p>
           <div className="card-actions">
-            <button className="btn bg-white border-2 border-purple-400 rounded-3xl text-purple-400">View Details</button>
+            <Link to={`/details/${product.product_id}`}><button className="btn bg-white border-2 border-purple-400 rounded-3xl text-purple-400">View Details</button></Link>
+            
           </div>
         </div>
       </div>

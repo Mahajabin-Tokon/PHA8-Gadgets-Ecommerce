@@ -12,7 +12,7 @@ const Home = () => {
       </h1>
       <div className="w-11/12 md:flex justify-around gap-2 mx-auto">
         <div className="md:w-1/4"><Menu></Menu></div>
-        <div className="md:w-3/4"><Outlet></Outlet></div>
+        <div className=""><Outlet></Outlet></div>
       </div>
     </div>
   );
