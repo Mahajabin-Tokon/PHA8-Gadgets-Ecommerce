@@ -15,4 +15,4 @@ const addToCart = (product) => {
   cart.push(product);
   localStorage.setItem("cart", JSON.stringify(cart));
 };
-export { addToCart };
+export { addToCart, getCartItems };

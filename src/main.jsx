@@ -8,6 +8,7 @@ import Home from "./pages/Home.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import Cards from "./components/Cards.jsx";
 import CardDetails from "./pages/CardDetails.jsx";
+import Cart from "./components/Cart.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,16 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+        children: [
+          {
+            path: "/dashboard",
+            element: <Cart></Cart>,
+          },
+          {
+            path: "/dashboard/cart",
+            element: <Cart></Cart>,
+          },
+        ],
       },
       {
         path: "/details/:id",
