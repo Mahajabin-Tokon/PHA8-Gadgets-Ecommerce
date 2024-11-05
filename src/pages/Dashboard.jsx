@@ -1,9 +1,15 @@
-
+import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Link, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Dashboard</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="bg-purple-500 flex flex-col justify-center items-center text-white gap-4 text-center pt-10 pb-10">
         <h1 className="text-xl font-bold w-1/2">Dashboard</h1>
         <p className="w-1/2">

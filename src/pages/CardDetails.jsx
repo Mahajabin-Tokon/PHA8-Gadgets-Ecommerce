@@ -3,16 +3,24 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
 import { useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
-import { addToCart, addToWishlist } from "../utils";
+import { addToCart, addToWishlist, getWishListItems } from "../utils";
+import { Helmet } from "react-helmet";
 
 const CardDetails = () => {
   const { id } = useParams();
   const data = useLoaderData();
   const [product, setProduct] = useState([]);
+  const [isOnWishlist, setIsOnWishlist] = useState(false)
 
   useEffect(() => {
+    document.title = "Product Details";
     const targetProduct = data.find((eachdata) => eachdata.product_id === id);
     setProduct(targetProduct);
+    const wishedItem = getWishListItems()
+    const isExist = wishedItem.find(item => item.product_id == targetProduct.product_id)
+    if (isExist) {
+      setIsOnWishlist(true)
+    }
   }, [data, id]);
 
   const handleClickForCart = (product) => {
@@ -21,10 +29,17 @@ const CardDetails = () => {
 
   const handleClickForWishlist = (product) => {
     addToWishlist(product);
+    setIsOnWishlist(true);
   };
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Dashboard</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
+      
       <div className="bg-purple-500 flex flex-col justify-center items-center text-white gap-4 text-center pt-10 pb-48">
         <h1 className="text-xl font-bold w-1/2">Product Details</h1>
         <p className="w-1/2">
@@ -59,7 +74,9 @@ const CardDetails = () => {
             <ul className="pl-5">
               {product.specs &&
                 Object.keys(product.specs).map((spec, idx) => (
-                  <li className="list-decimal" key={idx}>{product.specs[spec]}</li>
+                  <li className="list-decimal" key={idx}>
+                    {product.specs[spec]}
+                  </li>
                 ))}
             </ul>
 
@@ -73,6 +90,7 @@ const CardDetails = () => {
                 <li>3. {product.specs[2]}</li>
                 <li>4. {product.specs[3]}</li>
             </ol> */}
+            
             <p className="font-bold">Rating:</p>
             <div className="flex gap-2 items-center">
               <ReactStars count={5} value={4} size={24} activeColor="#ffd700" />
@@ -87,12 +105,14 @@ const CardDetails = () => {
               >
                 Add to Cart <AiOutlineShoppingCart />
               </button>
-              <div
+              <button
+              
                 onClick={() => handleClickForWishlist(product)}
-                className="bg-white rounded-full p-2 text-center border-2"
+                className="btn bg-white rounded-full p-3 text-center border-2"
+                disabled={isOnWishlist}
               >
                 <CiHeart className="text-xl" />
-              </div>
+              </button>
             </div>
           </div>
         </div>

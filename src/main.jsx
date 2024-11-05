@@ -10,11 +10,14 @@ import Cards from "./components/Cards.jsx";
 import CardDetails from "./pages/CardDetails.jsx";
 import Cart from "./components/Cart.jsx";
 import Wishlist from "./components/Wishlist.jsx";
+import Error from "./pages/Error.jsx";
+import Statistics from "./pages/Statistics.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElemenft: <Error></Error>,
     children: [
       {
         path: "/",
@@ -51,10 +54,15 @@ const router = createBrowserRouter([
         ],
       },
       {
+        path: "/statistics",
+        element: <Statistics />,
+      },
+      {
         path: "/details/:id",
         element: <CardDetails />,
         loader: () => fetch("../products.json"),
       },
+      
     ],
   },
 ]);

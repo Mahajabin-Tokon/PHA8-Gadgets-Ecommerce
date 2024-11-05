@@ -1,10 +1,26 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
+import { getCartItems } from "../utils";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [cartNum, setCartNum] = useState(getCartItems().length);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.addEventListener("storage", () => {
+      setCartNum(cartNum + 1);
+    });
+  }, [cartNum]);
+
   return (
-    <div className="navbar w-11/12 mx-auto bg-purple-500 px-2">
+    <div
+      className={`navbar w-11/12 mx-auto bg-purple-500 px-2 ${
+        location.pathname !== "/" ? "bg-white" : ""
+      }`}
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,7 +41,9 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className={
+              "menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow "
+            }
           >
             <NavLink
               to="/"
@@ -53,12 +71,21 @@ const Navbar = () => {
             </NavLink>
           </ul>
         </div>
-        <Link to="/" className="text-2xl font-bold text-white">
+        <Link
+          to="/"
+          className={`text-2xl font-bold ${
+            location.pathname !== "/" ? "text-black" : "text-white "
+          }`}
+        >
           Gadget Heaven
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-6 text-lg text-white">
+        <ul
+          className={`menu menu-horizontal px-1 gap-6 text-lg ${
+            location.pathname !== "/" ? "text-black" : "text-white "
+          }`}
+        >
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -86,11 +113,30 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-4">
-        <div className="bg-white rounded-full p-1 text-center">
-          <AiOutlineShoppingCart className="text-2xl" />
+        <div className="">
+          <div className="w-4 h-4 rounded-full bg-red-500 text-center text-xs relative left-5 top-2">
+            {cartNum}
+          </div>
+          <div
+            className={`bg-white rounded-full p-1 text-center ${
+              location.pathname !== "/" ? "border-2 border-slate-300" : ""
+            }`}
+          >
+            <AiOutlineShoppingCart className="text-2xl" />
+          </div>
         </div>
-        <div className="bg-white rounded-full p-1 text-center">
-          <CiHeart className="text-2xl" />
+
+        <div className="">
+          <div className="w-4 h-4 rounded-full bg-red-500 text-center text-xs relative left-5 top-2">
+            {cartNum}
+          </div>
+          <div
+            className={`bg-white rounded-full p-1 text-center ${
+              location.pathname !== "/" ? "border-2 border-slate-300" : ""
+            }`}
+          >
+            <CiHeart className="text-2xl" />
+          </div>
         </div>
       </div>
     </div>

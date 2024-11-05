@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import bannerImg from "../assets/banner.jpg";
 
 const Banner = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/dashboard");
+  };
   return (
     <div>
       <div className="w-11/12 mx-auto bg-purple-500 flex flex-col justify-center items-center text-white gap-4 text-center pt-10 pb-48">
@@ -11,7 +17,10 @@ const Banner = () => {
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>
-        <button className="bg-white text-purple-400 rounded-3xl p-2 font-bold">
+        <button
+          onClick={handleClick}
+          className="bg-white text-purple-400 rounded-3xl p-2 font-bold"
+        >
           Show Now
         </button>
       </div>

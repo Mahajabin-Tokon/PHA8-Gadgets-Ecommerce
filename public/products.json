@@ -151,5 +151,40 @@
     ],
     "availability": false,
     "rating": 4.5
+  },
+
+  {
+    "product_id": "SWT001",
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Smartwatch",
+    "price": 399.99,
+    "description": "The latest Apple Watch with advanced health and fitness tracking features.",
+    "specs": [
+      "41mm Retina display",
+      "Apple S8 chip",
+      "Blood Oxygen & ECG app",
+      "Crash Detection",
+      "Water resistant up to 50 meters"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "SWT002",
+    "product_title": "Samsung Galaxy Watch 5",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Smartwatch",
+    "price": 329.99,
+    "description": "Samsung's versatile smartwatch with powerful fitness tracking and long battery life.",
+    "specs": [
+      "44mm Super AMOLED display",
+      "Exynos W920 Dual-core",
+      "BioActive Sensor for health tracking",
+      "Advanced sleep tracking",
+      "Water resistant up to 50 meters"
+    ],
+    "availability": true,
+    "rating": 4.6
   }
 ]
