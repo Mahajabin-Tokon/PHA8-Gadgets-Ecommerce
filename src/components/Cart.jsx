@@ -46,7 +46,7 @@ const Cart = () => {
     <div>
       <dialog id="my_modal_1" className="modal">
         <div className="modal-box flex flex-col justify-center items-center space-y-4">
-          <img src={check} alt="Green checkmark" />
+          <img className="h-40 object-cover" src={check} alt="Green checkmark" />
           <h3 className="font-bold text-lg">Payment Successful</h3>
           <hr className="w-5/6" />
           <p className="py-4">

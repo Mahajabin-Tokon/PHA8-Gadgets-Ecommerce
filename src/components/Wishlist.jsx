@@ -26,7 +26,7 @@ const Wishlist = () => {
               <div className="card lg:card-side bg-base-100 shadow-xl">
                 <figure className="py-2 px-6">
                   <img
-                    className="rounded-xl w-48"
+                    className="rounded-xl w-48 h-40 object-cover"
                     src={item.product_image}
                     alt="Album"
                   />
