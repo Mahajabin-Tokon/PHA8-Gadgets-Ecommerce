@@ -1,0 +1,53 @@
+[
+  {
+    "product_id": "TAB001",
+    "product_title": "iPad Air (5th Generation)",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Tablet",
+    "price": 599.99,
+    "description": "Apple's powerful and lightweight tablet with an advanced display.",
+    "specs": [
+      "10.9-inch Liquid Retina display",
+      "Apple M1 chip",
+      "64GB storage",
+      "12MP Ultra Wide front camera",
+      "Supports Apple Pencil (2nd generation)"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "HD001",
+    "product_title": "Sony WH-1000XM5",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Headphones",
+    "price": 399.99,
+    "description": "Premium noise-canceling headphones with superior sound quality.",
+    "specs": [
+      "Active Noise Cancelling",
+      "30-hour battery life",
+      "Quick charge (10 min for 5 hours)",
+      "Bluetooth 5.2",
+      "Voice Assistant support"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "CAM001",
+    "product_title": "Canon EOS R6",
+    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "category": "Camera",
+    "price": 2499.99,
+    "description": "Full-frame mirrorless camera with excellent performance for photo and video.",
+    "specs": [
+      "20.1 MP full-frame CMOS sensor",
+      "4K video recording",
+      "Dual Pixel CMOS AF II",
+      "5-axis in-body image stabilization",
+      "ISO range 100-102400"
+    ],
+    "availability": false,
+    "rating": 4.7
+  }
+]

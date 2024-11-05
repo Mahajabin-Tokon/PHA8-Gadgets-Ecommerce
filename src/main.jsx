@@ -61,6 +61,7 @@ const router = createBrowserRouter([
       {
         path: "/upcoming",
         element: <Upcoming />,
+        loader: () => fetch("../upcoming.json"),
       },
       {
         path: "/details/:id",
