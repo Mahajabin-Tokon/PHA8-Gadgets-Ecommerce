@@ -70,6 +70,14 @@ const Navbar = () => {
             >
               Dashboard
             </NavLink>
+            <NavLink
+              to="/upcoming"
+              className={({ isActive }) =>
+                ` ${isActive ? "font-bold underline" : "hover"}`
+              }
+            >
+              Upcoming
+            </NavLink>
           </ul>
         </div>
         <Link
@@ -110,6 +118,14 @@ const Navbar = () => {
             }
           >
             Dashboard
+          </NavLink>
+          <NavLink
+            to="/upcoming"
+            className={({ isActive }) =>
+              ` ${isActive ? "font-bold underline" : "hover"}`
+            }
+          >
+            Upcoming
           </NavLink>
         </ul>
       </div>

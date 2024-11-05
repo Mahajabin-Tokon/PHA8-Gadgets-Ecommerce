@@ -12,6 +12,7 @@ import Cart from "./components/Cart.jsx";
 import Wishlist from "./components/Wishlist.jsx";
 import Error from "./pages/Error.jsx";
 import Statistics from "./pages/Statistics.jsx";
+import Upcoming from "./components/Upcoming.jsx";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics />,
+      },
+      {
+        path: "/upcoming",
+        element: <Upcoming />,
       },
       {
         path: "/details/:id",
