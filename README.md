@@ -5,7 +5,7 @@ Gadget Heaven
 https://incredible-pastelito-0a6061.netlify.app/
 
 # Requirement Document Link:
-
+https://drive.google.com/file/d/1yupbtpY43e1r_pq-am47c0U7XSaLXIji/view?usp=sharing
 
 # React Fundamental concepts used in the project:
 - Components
