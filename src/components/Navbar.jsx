@@ -7,14 +7,13 @@ import { CartCounterContext, WishlistCounterContext } from "../pages/Layout";
 
 const Navbar = () => {
   // const [cartNum, setCartNum] = useState(getCartItems().length);
-  const {cartNum, setCartNum} = useContext(CartCounterContext);
+  const { cartNum, setCartNum } = useContext(CartCounterContext);
   const { listNum, setListNum } = useContext(WishlistCounterContext);
-  
 
   const location = useLocation();
 
   useEffect(() => {
-    setCartNum(getCartItems().length)
+    setCartNum(getCartItems().length);
   }, [cartNum]);
 
   return (
@@ -116,7 +115,11 @@ const Navbar = () => {
       </div>
       <div className="navbar-end space-x-4">
         <div className="">
-          <div className="w-4 h-4 rounded-full bg-red-500 text-center text-xs relative left-5 top-2">
+          <div
+            className={`w-4 h-4 rounded-full bg-red-500 text-center text-xs relative left-5 top-2 ${
+              cartNum == 0 ? "invisible" : ""
+            }`}
+          >
             {cartNum}
           </div>
           <div
@@ -129,7 +132,11 @@ const Navbar = () => {
         </div>
 
         <div className="">
-          <div className="w-4 h-4 rounded-full bg-red-500 text-center text-xs relative left-5 top-2">
+          <div
+            className={`w-4 h-4 rounded-full bg-red-500 text-center text-xs relative left-5 top-2 ${
+              listNum == 0 ? "invisible" : ""
+            }`}
+          >
             {listNum}
           </div>
           <div

@@ -17,7 +17,7 @@ const CardDetails = () => {
   const data = useLoaderData();
   const [product, setProduct] = useState([]);
   const [isOnWishlist, setIsOnWishlist] = useState(false);
-  const { setCartNum } = useContext(CartCounterContext);
+  const { cartNum, setCartNum } = useContext(CartCounterContext);
   const { listNum, setListNum } = useContext(WishlistCounterContext);
 
   useEffect(() => {
