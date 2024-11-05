@@ -2,7 +2,7 @@
   {
     "product_id": "LPT001",
     "product_title": "Dell XPS 13",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/xJk8JSR/1.jpg",
     "category": "Laptop",
     "price": 999.99,
     "description": "A high-performance, sleek laptop with a 13.4-inch display.",
@@ -19,7 +19,7 @@
   {
     "product_id": "LPT002",
     "product_title": "Apple MacBook Air M2",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/3W7L5Nq/2.jpg",
     "category": "Laptop",
     "price": 1199.99,
     "description": "Apple's lightest laptop with the powerful M2 chip.",
@@ -36,7 +36,7 @@
   {
     "product_id": "LPT003",
     "product_title": "HP Spectre x360",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/JpxpVRc/3.jpg",
     "category": "Laptop",
     "price": 1099.99,
     "description": "A convertible laptop with a stunning touchscreen display.",
@@ -53,7 +53,7 @@
   {
     "product_id": "LPT004",
     "product_title": "Lenovo ThinkPad X1 Carbon",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/MgQCTgP/4.jpg",
     "category": "Laptop",
     "price": 1399.99,
     "description": "An ultra-light, durable business laptop with premium build.",
@@ -70,7 +70,7 @@
   {
     "product_id": "LPT005",
     "product_title": "Asus ZenBook 14",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/RgTc8Yn/5.jpg",
     "category": "Laptop",
     "price": 799.99,
     "description": "Lightweight laptop with great battery life and performance.",
@@ -87,7 +87,7 @@
   {
     "product_id": "PHN001",
     "product_title": "iPhone 14 Pro",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/2v1tzwf/6.jpg",
     "category": "Phone",
     "price": 1099.99,
     "description": "Apple's latest high-performance smartphone with Pro features.",
@@ -104,7 +104,7 @@
   {
     "product_id": "PHN002",
     "product_title": "Samsung Galaxy S23",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/7rvy1fL/7.jpg",
     "category": "Phone",
     "price": 899.99,
     "description": "Samsung's flagship smartphone with powerful features.",
@@ -121,7 +121,7 @@
   {
     "product_id": "PHN003",
     "product_title": "Google Pixel 7",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/8X0h5nD/8.jpg",
     "category": "Phone",
     "price": 649.99,
     "description": "Google's newest smartphone with excellent AI-powered features.",
@@ -138,7 +138,7 @@
   {
     "product_id": "PHN004",
     "product_title": "OnePlus 11",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/jwWDrN1/9.jpg",
     "category": "Phone",
     "price": 799.99,
     "description": "High-performance phone with fast charging and smooth display.",
@@ -156,7 +156,7 @@
   {
     "product_id": "SWT001",
     "product_title": "Apple Watch Series 8",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/MRkC6Jy/10.jpg" ,
     "category": "Smartwatch",
     "price": 399.99,
     "description": "The latest Apple Watch with advanced health and fitness tracking features.",
@@ -173,7 +173,7 @@
   {
     "product_id": "SWT002",
     "product_title": "Samsung Galaxy Watch 5",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/wWRTr63/11.jpg" ,
     "category": "Smartwatch",
     "price": 329.99,
     "description": "Samsung's versatile smartwatch with powerful fitness tracking and long battery life.",
@@ -188,3 +188,15 @@
     "rating": 4.6
   }
 ]
+
+
+
+
+
+
+
+
+
+
+
+

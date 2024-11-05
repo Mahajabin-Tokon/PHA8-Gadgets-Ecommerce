@@ -5,7 +5,7 @@ const Card = ({product}) => {
     <>
       <div className="card bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
-          <img src={product.product_image} alt="Product image" className="rounded-xl" />
+          <img src={product.product_image} alt="Product image" className="rounded-xl w-11/12 h-40 object-cover" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{product.product_title}</h2>

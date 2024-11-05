@@ -2,7 +2,7 @@
   {
     "product_id": "TAB001",
     "product_title": "iPad Air (5th Generation)",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/nf8q3n4/12.jpg" ,
     "category": "Tablet",
     "price": 599.99,
     "description": "Apple's powerful and lightweight tablet with an advanced display.",
@@ -19,7 +19,7 @@
   {
     "product_id": "HD001",
     "product_title": "Sony WH-1000XM5",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/H2pJk7c/13.jpg" ,
     "category": "Headphones",
     "price": 399.99,
     "description": "Premium noise-canceling headphones with superior sound quality.",
@@ -36,7 +36,7 @@
   {
     "product_id": "CAM001",
     "product_title": "Canon EOS R6",
-    "product_image": "https://i.ibb.co/dQrfnMD/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+    "product_image": "https://i.ibb.co/dG3BZxK/14.jpg" ,
     "category": "Camera",
     "price": 2499.99,
     "description": "Full-frame mirrorless camera with excellent performance for photo and video.",

@@ -26,7 +26,7 @@ const Upcoming = () => {
               <img
                 src={product.product_image}
                 alt="Product image"
-                className="rounded-xl"
+                className="rounded-xl w-11/12 h-40 object-cover"
               />
             </figure>
             <div className="card-body">
