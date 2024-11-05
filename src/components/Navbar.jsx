@@ -2,17 +2,19 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
 import { getCartItems } from "../utils";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { CartCounterContext, WishlistCounterContext } from "../pages/Layout";
 
 const Navbar = () => {
-  const [cartNum, setCartNum] = useState(getCartItems().length);
+  // const [cartNum, setCartNum] = useState(getCartItems().length);
+  const {cartNum, setCartNum} = useContext(CartCounterContext);
+  const { listNum, setListNum } = useContext(WishlistCounterContext);
+  
 
   const location = useLocation();
 
   useEffect(() => {
-    window.addEventListener("storage", () => {
-      setCartNum(cartNum + 1);
-    });
+    setCartNum(getCartItems().length)
   }, [cartNum]);
 
   return (
@@ -128,7 +130,7 @@ const Navbar = () => {
 
         <div className="">
           <div className="w-4 h-4 rounded-full bg-red-500 text-center text-xs relative left-5 top-2">
-            {cartNum}
+            {listNum}
           </div>
           <div
             className={`bg-white rounded-full p-1 text-center ${

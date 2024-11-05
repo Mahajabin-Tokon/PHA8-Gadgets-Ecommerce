@@ -1,14 +1,16 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { GiCancel, GiSettingsKnobs } from "react-icons/gi";
 import { getCartItems } from "../utils";
 
 import check from "../assets/Group.png";
 import { useNavigate } from "react-router-dom";
+import { CartCounterContext } from "../pages/Layout";
 
 const Cart = () => {
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
   const [isCartZero, setIsCartZero] = useState(false);
+  const { setCartNum } = useContext(CartCounterContext);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -35,6 +37,8 @@ const Cart = () => {
 
   const handlePurchase = () => {
     localStorage.setItem("cart", "");
+    const newCartLen = getCartItems().length;
+    setCartNum(newCartLen);
     handleClose();
   };
 
@@ -86,8 +90,8 @@ const Cart = () => {
           </div>
         </div>
         <div className="">
-          {cart.map((item) => (
-            <div className="w-10/12 mx-auto px-6 py-10">
+          {cart.map((item, idx) => (
+            <div key={idx} className="w-10/12 mx-auto px-6 py-10">
               <div className="card lg:card-side bg-base-100 shadow-xl">
                 <figure className="py-2 px-6">
                   <img

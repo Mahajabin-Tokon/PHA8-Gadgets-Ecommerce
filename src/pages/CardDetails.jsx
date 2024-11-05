@@ -1,35 +1,50 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
 import { useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
-import { addToCart, addToWishlist, getWishListItems } from "../utils";
+import {
+  addToCart,
+  addToWishlist,
+  getCartItems,
+  getWishListItems,
+} from "../utils";
 import { Helmet } from "react-helmet";
+import { CartCounterContext, WishlistCounterContext } from "./Layout";
 
 const CardDetails = () => {
   const { id } = useParams();
   const data = useLoaderData();
   const [product, setProduct] = useState([]);
-  const [isOnWishlist, setIsOnWishlist] = useState(false)
+  const [isOnWishlist, setIsOnWishlist] = useState(false);
+  const { setCartNum } = useContext(CartCounterContext);
+  const { listNum, setListNum } = useContext(WishlistCounterContext);
 
   useEffect(() => {
     document.title = "Product Details";
     const targetProduct = data.find((eachdata) => eachdata.product_id === id);
     setProduct(targetProduct);
-    const wishedItem = getWishListItems()
-    const isExist = wishedItem.find(item => item.product_id == targetProduct.product_id)
+    const wishedItem = getWishListItems();
+    const isExist = wishedItem.find(
+      (item) => item.product_id == targetProduct.product_id
+    );
     if (isExist) {
-      setIsOnWishlist(true)
+      setIsOnWishlist(true);
     }
   }, [data, id]);
 
   const handleClickForCart = (product) => {
     addToCart(product);
+    const newCartLen = getCartItems().length;
+    setCartNum(newCartLen);
+    
   };
 
   const handleClickForWishlist = (product) => {
     addToWishlist(product);
     setIsOnWishlist(true);
+    const newListLen = getWishListItems().length;
+    setListNum(newListLen);
   };
 
   return (
@@ -39,7 +54,7 @@ const CardDetails = () => {
         <title>Dashboard</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      
+
       <div className="bg-purple-500 flex flex-col justify-center items-center text-white gap-4 text-center pt-10 pb-48">
         <h1 className="text-xl font-bold w-1/2">Product Details</h1>
         <p className="w-1/2">
@@ -90,7 +105,7 @@ const CardDetails = () => {
                 <li>3. {product.specs[2]}</li>
                 <li>4. {product.specs[3]}</li>
             </ol> */}
-            
+
             <p className="font-bold">Rating:</p>
             <div className="flex gap-2 items-center">
               <ReactStars count={5} value={4} size={24} activeColor="#ffd700" />
@@ -106,7 +121,6 @@ const CardDetails = () => {
                 Add to Cart <AiOutlineShoppingCart />
               </button>
               <button
-              
                 onClick={() => handleClickForWishlist(product)}
                 className="btn bg-white rounded-full p-3 text-center border-2"
                 disabled={isOnWishlist}

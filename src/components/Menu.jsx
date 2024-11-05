@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Menu = () => {
   return (
     
-    <div className="flex flex-col justify-center gap-2 p-2 bg-white m-2">
+    <div className="flex flex-col justify-center gap-2 p-2 bg-white m-2 rounded-xl">
       <NavLink
         to={`/cards/${"All"}`}
         className={({ isActive }) =>
