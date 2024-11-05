@@ -1,8 +1,20 @@
-# React + Vite
+# Project Name:
+Gadget Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Live Link:
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Requirement Document Link:
+
+
+# React Fundamental concepts used in the project:
+- Components
+- Router
+- Context API
+
+# 5 features of the website:
+1. The title of the page changes based on the links on the navigation bar
+2. You can view products based on selected category
+3. Add item to cart or wishlist dynamically updates the counters on the respective icons
+4. You can sort your cart items via price in descending order
+5. The cart and wishlist stays persistent using localStorage
