@@ -9,7 +9,7 @@ const Banner = () => {
   };
   return (
     <div>
-      <div className="w-11/12 mx-auto bg-purple-500 flex flex-col justify-center items-center text-white gap-4 text-center pt-10 pb-48">
+      <div className="w-11/12 mx-auto bg-purple-500 flex flex-col justify-center items-center text-white gap-4 text-center pt-10 pb-48 rounded-b-3xl">
         <h1 className="text-3xl font-bold w-1/2">
           Upgrade Your Tech Accessorize with Gadget Heaven Accessories
         </h1>
