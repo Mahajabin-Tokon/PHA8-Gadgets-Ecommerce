@@ -101,7 +101,7 @@ const Cart = () => {
                   <p>{item.description}</p>
                   <p>{item.price}</p>
                 </div>
-                <div className="">
+                <div className="m-4">
                   <GiCancel className="text-2xl text-red-500" />
                 </div>
               </div>
