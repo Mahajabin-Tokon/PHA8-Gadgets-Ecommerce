@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -17,16 +17,30 @@ const Dashboard = () => {
           level. From smart devices to the coolest accessories, we have it all!
         </p>
         <div className="space-x-4">
-          <Link to="/dashboard/cart">
-            <button className="btn text-purple-600 rounded-3xl px-6">
-              Cart
-            </button>
-          </Link>
-          <Link to="/dashboard/wishlist">
-            <button className="btn text-white border-2 border-white bg-purple-600 rounded-3xl ">
-              Wishlist
-            </button>
-          </Link>
+          <NavLink
+            to="/dashboard/cart"
+            className={({ isActive }) =>
+              `btn rounded-3xl px-6 ${
+                isActive
+                  ? "bg-white text-purple-600"
+                  : "text-white border-2 border-white bg-purple-600"
+              }`
+            }
+          >
+            Cart
+          </NavLink>
+          <NavLink
+            to="/dashboard/wishlist"
+            className={({ isActive }) =>
+              `btn rounded-3xl px-6 ${
+                isActive
+                  ? "bg-white text-purple-600"
+                  : "text-white border-2 border-white bg-purple-600"
+              }`
+            }
+          >
+            Wishlist
+          </NavLink>
         </div>
       </div>
       <Outlet></Outlet>

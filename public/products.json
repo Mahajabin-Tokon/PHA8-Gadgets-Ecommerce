@@ -47,7 +47,7 @@
       "512GB SSD",
       "Intel Iris Xe Graphics"
     ],
-    "availability": false,
+    "availability": true,
     "rating": 4.5
   },
   {
@@ -149,14 +149,14 @@
       "Triple 50MP rear cameras",
       "5G enabled"
     ],
-    "availability": false,
+    "availability": true,
     "rating": 4.5
   },
 
   {
     "product_id": "SWT001",
     "product_title": "Apple Watch Series 8",
-    "product_image": "https://i.ibb.co/MRkC6Jy/10.jpg" ,
+    "product_image": "https://i.ibb.co/MRkC6Jy/10.jpg",
     "category": "Smartwatch",
     "price": 399.99,
     "description": "The latest Apple Watch with advanced health and fitness tracking features.",
@@ -173,7 +173,7 @@
   {
     "product_id": "SWT002",
     "product_title": "Samsung Galaxy Watch 5",
-    "product_image": "https://i.ibb.co/wWRTr63/11.jpg" ,
+    "product_image": "https://i.ibb.co/wWRTr63/11.jpg",
     "category": "Smartwatch",
     "price": 329.99,
     "description": "Samsung's versatile smartwatch with powerful fitness tracking and long battery life.",
@@ -188,15 +188,3 @@
     "rating": 4.6
   }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
