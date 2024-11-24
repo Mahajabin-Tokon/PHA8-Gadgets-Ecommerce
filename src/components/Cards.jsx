@@ -6,7 +6,7 @@ const Cards = () => {
   const { type } = useParams();
   const data = useLoaderData();
   const [product, setProducts] = useState([]);
-
+// Test
   useEffect(() => {
     if (type) {
       if (type === "All") {
